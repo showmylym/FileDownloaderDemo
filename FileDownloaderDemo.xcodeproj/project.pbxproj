@@ -13,6 +13,7 @@
 		530C4B001E51D67400B7EF95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 530C4AFF1E51D67400B7EF95 /* Assets.xcassets */; };
 		530C4B031E51D67400B7EF95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 530C4B011E51D67400B7EF95 /* LaunchScreen.storyboard */; };
 		530C4B0C1E51D69700B7EF95 /* FileDownloadUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530C4B0B1E51D69700B7EF95 /* FileDownloadUtil.swift */; };
+		534C90231E51F95000AA6A5A /* LYMPieProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534C90221E51F95000AA6A5A /* LYMPieProgressView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		530C4B021E51D67400B7EF95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		530C4B041E51D67400B7EF95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		530C4B0B1E51D69700B7EF95 /* FileDownloadUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileDownloadUtil.swift; sourceTree = "<group>"; };
+		534C90221E51F95000AA6A5A /* LYMPieProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYMPieProgressView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 		530C4B0A1E51D69700B7EF95 /* lib */ = {
 			isa = PBXGroup;
 			children = (
+				534C90221E51F95000AA6A5A /* LYMPieProgressView.swift */,
 				530C4B0B1E51D69700B7EF95 /* FileDownloadUtil.swift */,
 			);
 			path = lib;
@@ -148,6 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				530C4AFB1E51D67400B7EF95 /* ViewController.swift in Sources */,
+				534C90231E51F95000AA6A5A /* LYMPieProgressView.swift in Sources */,
 				530C4AF91E51D67400B7EF95 /* AppDelegate.swift in Sources */,
 				530C4B0C1E51D69700B7EF95 /* FileDownloadUtil.swift in Sources */,
 			);
@@ -311,6 +315,7 @@
 				530C4B091E51D67400B7EF95 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

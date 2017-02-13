@@ -93,7 +93,7 @@ class FileDownloadUtil: NSObject {
     
     func checkOperationCount() {
         print("当前队列操作数:\(queue.operationCount)")
-        let delay5Sec = DispatchTime(uptimeNanoseconds: 5 * 1000 * 1000 * 1000)
+        let delay5Sec = DispatchTime.now() + Double(5)
         DispatchQueue.main.asyncAfter(deadline: delay5Sec) { 
             self.checkOperationCount()
         }
@@ -207,7 +207,7 @@ extension FileDownloadOperation : URLSessionDownloadDelegate {
         }
         if totalBytesExpectedToWrite > 0 {
             progress = totalBytesWritten * 100 / totalBytesExpectedToWrite
-            print("文件下载进度:\(progress)%)")
+            print("文件下载进度:\(progress)%，\(totalBytesWritten)/\(totalBytesExpectedToWrite)")
         } else {
             progress = 100
             print("文件期望总大小为0，无法计算下载进度")
